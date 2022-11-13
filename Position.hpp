@@ -17,6 +17,7 @@ struct Position
 	Position();
 	Position(int x);
 	Position(int x, int y);
+	int Size();
 	Position Flip();
 };
 
