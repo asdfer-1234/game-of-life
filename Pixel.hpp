@@ -5,7 +5,8 @@ class Pixel
 public:
 	Palette palette;
 	char character;
-	Pixel(char character, Palette palette);
+	Pixel();
 	Pixel(char character);
+	Pixel(char character, Palette palette);
 };
 

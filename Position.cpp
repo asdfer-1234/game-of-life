@@ -18,6 +18,10 @@ Position::Position(int x) : Position(x, x) {}
 
 Position::Position(int x, int y) : x(x), y(y) {}
 
+int Position::Size(){
+	return x * y;
+}
+
 Position Position::Flip(){
 	return Position(y, x);
 }
