@@ -17,8 +17,8 @@ public:
 	char GetCode();
 	Color GetForeground();
 	Color GetBackground();
-	Color SetForeground(Color color);
-	Color SetBackground(Color color);
+	void SetForeground(Color color);
+	void SetBackground(Color color);
 	Palette Inverted();
 };
 

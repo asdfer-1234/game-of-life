@@ -33,12 +33,12 @@ Color Palette::GetBackground(){
 	return (Color)((code & backgroundBits) >> 4);
 }
 
-Color Palette::SetForeground(Color color){
+void Palette::SetForeground(Color color){
 	code &= ~foregroundBits;
 	code |= Foregroundify(color);
 }
 
-Color Palette::SetBackground(Color color){
+void Palette::SetBackground(Color color){
 	code &= ~backgroundBits;
 	code |= Backgroundify(color);
 }
