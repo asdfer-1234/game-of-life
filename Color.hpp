@@ -6,7 +6,7 @@ enum class Color
 	DarkGreen,
 	Aqua,
 	DarkRed,
-	Purple,
+	DarkPurple,
 	DarkYellow,
 	LightGray,
 	Gray,
