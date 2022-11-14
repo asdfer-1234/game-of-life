@@ -13,6 +13,7 @@ private:
 	static const SMALL_RECT windowInitializationStarter;
 	static Position matrixSize;
 	static Pixel* matrix;
+	static Pixel* renderedMatrix;
 	static Console& ActiveConsole();
 	static Console& OtherConsole();
 	static COORD PositionToCoord(Position position);
