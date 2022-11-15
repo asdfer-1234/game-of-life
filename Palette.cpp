@@ -21,7 +21,7 @@ Palette::Palette(Color foreground, Color background){
 	SetBackground(background);
 }
 
-char Palette::GetCode(){
+char Palette::GetCode() const{
 	return code;
 }
 
@@ -45,4 +45,12 @@ void Palette::SetBackground(Color color){
 
 Palette Palette::Inverted(){
 	return Palette(GetBackground(), GetForeground());
+}
+
+bool Palette::operator==(const Palette& other) const {
+	return GetCode() == other.GetCode();
+}
+
+bool Palette::operator!=(const Palette &other) const {
+	return !(*this == other);
 }

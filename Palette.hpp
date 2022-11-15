@@ -14,11 +14,14 @@ public:
 	Palette();
 	Palette(Color foreground);
 	Palette(Color foreground, Color background);
-	char GetCode();
+	char GetCode() const;
 	Color GetForeground();
 	Color GetBackground();
 	void SetForeground(Color color);
 	void SetBackground(Color color);
 	Palette Inverted();
+	bool operator==(const Palette& other) const;
+	bool operator!=(const Palette &other) const;
 };
+
 
