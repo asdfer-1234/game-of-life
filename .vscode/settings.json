@@ -1,0 +1,7 @@
+{
+	"files.associations": {
+		"*.cfg": "raw",
+		"random": "cpp",
+		"xutility": "cpp"
+	}
+}
