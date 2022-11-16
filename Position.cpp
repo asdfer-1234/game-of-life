@@ -22,28 +22,22 @@ int Position::Size() { return x * y; }
 
 Position Position::Flip() { return Position(y, x); }
 
-Position operator-(Position a) { return Position(-a.x, -a.y); }
+Position Position::operator-() const { return Position(-x, -y); }
 
-Position operator+(Position a, Position b) {
-  return Position(a.x + b.x, a.y + b.y);
+Position Position::operator+(Position other) const {
+  return Position(x + other.x, y + other.y);
 }
 
-Position operator-(Position a, Position b) { return a + -b; }
+Position Position::operator-(Position other) const { return *this + -other; }
 
-Position operator*(Position a, Position b) {
-  return Position(a.x * b.x, a.y * b.y);
-}
+Position Position::operator*(Position other) const { return Position(x * other.x, y * other.y); }
 
-Position operator*(Position a, int b) { return a * Position(b); }
+Position Position::operator*(int other) const { return *this * Position(other); }
 
-Position operator/(Position a, Position b) {
-  return Position(a.x / b.x, a.y / b.y);
-}
+Position Position::operator/(Position other) const { return Position(x / other.x, y / other.y); }
 
-Position operator/(Position a, int b) { return a / Position(b); }
+Position Position::operator/(int b) const { return *this / Position(b); }
 
-Position operator%(Position a, Position b) {
-  return Position(a.x % b.x, a.y % b.y);
-}
+Position Position::operator%(Position other) const { return Position(x % other.x, y % other.y); }
 
-Position operator%(Position a, int b) { return Position(a.x % b, a.y % b); }
+Position Position::operator%(int other) const { return *this / Position(other); }

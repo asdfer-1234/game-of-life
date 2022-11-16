@@ -18,14 +18,13 @@ struct Position {
   Position(int x, int y);
   int Size();
   Position Flip();
+  Position operator-() const;
+  Position operator+(Position other) const;
+  Position operator-(Position other) const;
+  Position operator*(Position other) const;
+  Position operator*(int other) const;
+  Position operator/(Position other) const;
+  Position operator/(int other) const;
+  Position operator%(Position other) const;
+  Position operator%(int other) const;
 };
-
-Position operator-(Position a);
-Position operator+(Position a, Position b);
-Position operator-(Position a, Position b);
-Position operator*(Position a, Position b);
-Position operator*(Position a, int b);
-Position operator/(Position a, Position b);
-Position operator/(Position a, int b);
-Position operator%(Position a, Position b);
-Position operator%(Position a, int b);
