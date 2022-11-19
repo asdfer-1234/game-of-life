@@ -1,13 +1,19 @@
 #include "Pixel.hpp"
 
-Pixel::Pixel() : Pixel(' ') {}
+const Pixel Pixel::blank = Pixel(' ');
 
-Pixel::Pixel(char character) : Pixel(character, Palette::basic) {}
+Pixel::Pixel(): Pixel(' ') {}
 
-Pixel::Pixel(char character, Palette palette)
-    : character(character), palette(palette) {}
+Pixel::Pixel(char character): Pixel(character, Palette::basic) {}
 
-bool operator==(const Pixel &a, const Pixel &b) {
-  return a.character == b.character && a.palette == b.palette;
+Pixel::Pixel(Palette palette): Pixel(' ', palette) {}
+
+Pixel::Pixel(char character, Palette palette): character(character), palette(palette) {}
+
+bool Pixel::operator==(const Pixel& other) const {
+	return character == other.character && palette == other.palette;
 }
-bool operator!=(const Pixel &a, const Pixel &b) { return !(a == b); }
+
+bool Pixel::operator!=(const Pixel& other) const {
+	return !((*this) == other);
+}

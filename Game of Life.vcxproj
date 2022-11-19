@@ -127,7 +127,9 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Console.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="Matrix.cpp" />
     <ClCompile Include="Palette.cpp" />
     <ClCompile Include="Pixel.cpp" />
     <ClCompile Include="Position.cpp" />
@@ -135,6 +137,8 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Color.hpp" />
+    <ClInclude Include="Console.hpp" />
+    <ClInclude Include="Matrix.hpp" />
     <ClInclude Include="Palette.hpp" />
     <ClInclude Include="Pixel.hpp" />
     <ClInclude Include="Position.hpp" />
