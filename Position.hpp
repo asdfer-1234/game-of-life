@@ -12,6 +12,7 @@ struct Position {
 	static const Position rightup;
 	static const Position leftdown;
 	static const Position leftup;
+	static const Position directions;
 	int x;
 	int y;
 	Position();

@@ -11,6 +11,7 @@ const Position Position::rightdown = right + down;
 const Position Position::rightup = right + up;
 const Position Position::leftdown = left + down;
 const Position Position::leftup = left + up;
+const Position Position::directions[] = {right, left, down, up, rightdown, rightup, leftdown, leftup};
 
 Position::Position() : Position(0) {}
 
