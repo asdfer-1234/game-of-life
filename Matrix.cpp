@@ -1,5 +1,7 @@
 #include "Matrix.hpp"
+#include <exception>
 #include <iostream>
+using namespace std;
 
 Matrix::Matrix(): Matrix(Position::zero) {}
 
@@ -25,7 +27,10 @@ const Position& Matrix::SetSize(Position size) {
 }
 
 Pixel& Matrix::GetPixel(Position position) const {
-	return (*this)[position.x][position.y];
+	if(position.Within(Position::zero, GetSize())) {
+		return (*this)[position.x][position.y];
+	}
+	throw out_of_range("GetPixel() out of bounds");
 }
 
 Pixel& Matrix::SetPixel(Position position, Pixel pixel) {

@@ -7,7 +7,12 @@
 
 class Game {
 private:
-	LifeNode* main;
-	Cursor cursor;
-	Rule rule;
+	static LifeNode* main;
+	static Cursor cursor;
+	static Rule rule;
+	static bool state;
+public:
+	static void Step();
+
+	static void Render();
 };
