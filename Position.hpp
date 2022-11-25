@@ -1,4 +1,5 @@
 #pragma once
+#include "Configuration.hpp"
 
 struct Position {
 	static const Position zero;
@@ -12,21 +13,31 @@ struct Position {
 	static const Position rightup;
 	static const Position leftdown;
 	static const Position leftup;
-	static const Position directions;
+	static const Position directions[directionCount];
+	static const Position spaces[directionCount + 1];
 	int x;
 	int y;
 	Position();
 	Position(int x);
 	Position(int x, int y);
-	int Size();
-	Position Flip();
+	int Size() const;
+	Position Flip() const;
+	bool Within(Position start, Position end);
 	Position operator-() const;
 	Position operator+(Position other) const;
+	Position& operator+=(Position other);
 	Position operator-(Position other) const;
+	Position& operator-=(Position other);
 	Position operator*(Position other) const;
 	Position operator*(int other) const;
+	Position& operator*=(Position other);
+	Position& operator*=(int other);
 	Position operator/(Position other) const;
 	Position operator/(int other) const;
+	Position& operator/=(Position other);
+	Position& operator/=(int other);
 	Position operator%(Position other) const;
 	Position operator%(int other) const;
+	Position& operator%=(Position other);
+	Position& operator%=(int other);
 };

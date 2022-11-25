@@ -18,6 +18,44 @@
       <Platform>x64</Platform>
     </ProjectConfiguration>
   </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Chunk.hpp" />
+    <ClInclude Include="Color.hpp" />
+    <ClInclude Include="Configuration.hpp" />
+    <ClInclude Include="Console.hpp" />
+    <ClInclude Include="Cursor.hpp" />
+    <ClInclude Include="Game.hpp" />
+    <ClInclude Include="Input.hpp" />
+    <ClInclude Include="Key.hpp" />
+    <ClInclude Include="LifeNode.hpp" />
+    <ClInclude Include="Matrix.hpp" />
+    <ClInclude Include="Palette.hpp" />
+    <ClInclude Include="Pixel.hpp" />
+    <ClInclude Include="Position.hpp" />
+    <ClInclude Include="Renderer.hpp" />
+    <ClInclude Include="Rule.hpp" />
+    <ClInclude Include="Stem.hpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Chunk.cpp" />
+    <ClCompile Include="Console.cpp" />
+    <ClCompile Include="Cursor.cpp" />
+    <ClCompile Include="Game.cpp" />
+    <ClCompile Include="Input.cpp" />
+    <ClCompile Include="Key.cpp" />
+    <ClCompile Include="LifeNode.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="Matrix.cpp" />
+    <ClCompile Include="Palette.cpp" />
+    <ClCompile Include="Pixel.cpp" />
+    <ClCompile Include="Position.cpp" />
+    <ClCompile Include="Renderer.cpp" />
+    <ClCompile Include="Rule.cpp" />
+    <ClCompile Include="Stem.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ClassDiagram.cd" />
+  </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
@@ -126,24 +164,6 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
   </ItemDefinitionGroup>
-  <ItemGroup>
-    <ClCompile Include="Console.cpp" />
-    <ClCompile Include="main.cpp" />
-    <ClCompile Include="Matrix.cpp" />
-    <ClCompile Include="Palette.cpp" />
-    <ClCompile Include="Pixel.cpp" />
-    <ClCompile Include="Position.cpp" />
-    <ClCompile Include="Renderer.cpp" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="Color.hpp" />
-    <ClInclude Include="Console.hpp" />
-    <ClInclude Include="Matrix.hpp" />
-    <ClInclude Include="Palette.hpp" />
-    <ClInclude Include="Pixel.hpp" />
-    <ClInclude Include="Position.hpp" />
-    <ClInclude Include="Renderer.hpp" />
-  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>

@@ -1,0 +1,109 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Chunk">
+    <Position X="0.5" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgAAAEABEAAAAAAQAAAAAAAkAAAAAAAAIAAwAAAAAAA=</HashCode>
+      <FileName>Chunk.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Console">
+    <Position X="0.5" Y="6.75" Width="2" />
+    <TypeIdentifier>
+      <HashCode>ABCAACAAACAAIQIBAAAIAACAAAAAAAAAAAAQAQAAIAA=</HashCode>
+      <FileName>Console.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Cursor">
+    <Position X="5.75" Y="0.5" Width="1.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAIBAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Cursor.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Game">
+    <Position X="7.5" Y="0.5" Width="1.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAQAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAQ=</HashCode>
+      <FileName>Game.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Input">
+    <Position X="9.25" Y="0.5" Width="1.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAACAAAAAAAAAAAAAAAoACAAAAAAAgAApAA=</HashCode>
+      <FileName>Input.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Key">
+    <Position X="4" Y="0.5" Width="1.25" />
+    <TypeIdentifier>
+      <HashCode>AAQIAAAAAAgAAAQAAAAAAAQAIAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Key.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="LifeNode">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAABAAAAAAAAEAAAAAAAAQAAgIAAAAAA=</HashCode>
+      <FileName>LifeNode.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Matrix">
+    <Position X="3" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAABAhAAAAAAAACAAIAIACAAAAEgAAAAAAAgAAAAAAA=</HashCode>
+      <FileName>Matrix.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Palette">
+    <Position X="6.5" Y="7.25" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAACAKAAgAAIAAAACABABSAgIAACAAAAAIAAAACAAAA=</HashCode>
+      <FileName>Palette.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Pixel">
+    <Position X="8.75" Y="11" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAIAAAAAAAAAAAAIAABAQAAAAAAAAAAAAAAAAAgAAA=</HashCode>
+      <FileName>Pixel.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Renderer">
+    <Position X="8.75" Y="7" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQBARgQgAAAAAAAEAEAACAAAAAAEAABAAAAAAAAAAA=</HashCode>
+      <FileName>Renderer.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Rule">
+    <Position X="8.75" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEAAAAAgACAIAAAAAAAAAAAAFAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Rule.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Stem">
+    <Position X="2.25" Y="0.5" Width="1.25" />
+    <TypeIdentifier>
+      <HashCode>AAAABAAAAAAAAAQAAAAAAAAAAAAAQAEAIAAgAAAAAAA=</HashCode>
+      <FileName>Stem.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Struct Name="Position">
+    <Position X="0.5" Y="11.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>QAAAgAAAAAAigAAgAAEBAREAAAAMAAAAAABgAoAAiAg=</HashCode>
+      <FileName>Position.hpp</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Enum Name="Color">
+    <Position X="6.5" Y="2.75" Width="1.25" />
+    <TypeIdentifier>
+      <HashCode>AAAHAABAAAAAAoAAQBAAABAABAAAAAIAAAAIADAAAAA=</HashCode>
+      <FileName>Color.hpp</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
