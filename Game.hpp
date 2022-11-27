@@ -6,13 +6,15 @@
 #include "Stem.hpp"
 
 class Game {
-private:
+public:
 	static LifeNode* main;
 	static Cursor cursor;
-	static Rule rule;
+	static Rule const& rule;
 	static bool state;
-public:
+	static bool paused;
+	static void Play();
 	static void Step();
-
 	static void Render();
+	static void Extend();
+	static void Pause();
 };

@@ -5,7 +5,10 @@
 
 class Cursor {
 public:
-	Chunk& chunk;
+	Chunk* chunk;
 	Position position;
+	Cursor(Chunk* chunk, Position position);
 	void Move(Position direction);
+	void Activate(bool state);
+	bool Info(bool state);
 };

@@ -14,6 +14,7 @@ private:
 public:
 	static Pixel& GetPixel(Position position);
 	static Pixel& SetPixel(Position position, const Pixel& pixel);
+	static Position GetSize();
 	static void SetMatrixSize(Position matrixSize);
 	static void FillRectangle(Position start, Position end, Pixel& pixel);
 	static void Update();

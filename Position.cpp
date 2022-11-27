@@ -33,6 +33,22 @@ Position Position::Flip() const {
 	return Position(y, x);
 }
 
+Position Position::Clamped(Position range) {
+	return Position(x >= 0 ? x % range.x : (-(-x % range.x) + range.x) % range.x, y >= 0 ? y % range.y : (-(-y % range.y) + range.y) % range.y);
+}
+
+Position Position::Clamped(int range) {
+	return Clamped(Position(range));
+}
+
+Position Position::Sloped(Position range) {
+	return Position(x >= 0 ? x / range.x : (x - range.x + 1) / range.x, y >= 0 ? y / range.y : (y - range.y + 1) / range.y);
+}
+
+Position Position::Sloped(int range) {
+	return (*this).Sloped(Position(range));
+}
+
 Position Position::operator-() const {
 	return Position(-x, -y);
 }
@@ -99,4 +115,12 @@ Position& Position::operator%=(Position other) {
 
 Position& Position::operator%=(int other) {
 	return *this = *this % other;
+}
+
+bool Position::operator==(Position other) const {
+	return x == other.x && y == other.y;
+}
+
+bool Position::operator!=(Position other) const {
+	return !(*this == other);
 }

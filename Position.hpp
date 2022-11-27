@@ -23,6 +23,10 @@ struct Position {
 	int Size() const;
 	Position Flip() const;
 	bool Within(Position start, Position end);
+	Position Clamped(Position range);
+	Position Clamped(int range);
+	Position Sloped(Position range);
+	Position Sloped(int range);
 	Position operator-() const;
 	Position operator+(Position other) const;
 	Position& operator+=(Position other);
@@ -40,4 +44,6 @@ struct Position {
 	Position operator%(int other) const;
 	Position& operator%=(Position other);
 	Position& operator%=(int other);
+	bool operator==(Position other) const;
+	bool operator!=(Position other) const;
 };

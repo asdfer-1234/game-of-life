@@ -9,6 +9,7 @@
 		"vector": "cpp",
 		"xstring": "cpp",
 		"xlocale": "cpp",
-		"*.rh": "cpp"
+		"*.rh": "cpp",
+		"xlocnum": "cpp"
 	}
 }

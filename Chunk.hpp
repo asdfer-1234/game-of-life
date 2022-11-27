@@ -12,9 +12,14 @@ private:
 	void SetLocalData(bool state, Position position, bool value);
 public:
 	Chunk();
-	Chunk& GetRelativeLifeNode(Position position) const;
-	bool GetData(bool state, Position position);
+	Chunk(Stem* parent);
+	~Chunk();
+	void SetParent(Stem* parent);
+
+	Chunk* FetchRelativeLifeNode(Position position, bool isChunk = true);
+	Chunk* GetRelativeLifeNode(Position position);
+	bool FetchData(bool state, Position position);
 	void SetData(bool state, Position position, bool value);
-	void Step(bool state, Rule rule);
-	Chunk& operator=(const Chunk& other);
+	bool GetData(bool state, Position position);
+	void Step();
 };

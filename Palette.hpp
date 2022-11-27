@@ -3,9 +3,9 @@
 
 class Palette {
 private:
-	char code;
-	static const char foregroundBits;
-	static const char backgroundBits;
+	unsigned char code;
+	static const unsigned char foregroundBits;
+	static const unsigned char backgroundBits;
 	char Foregroundify(Color color);
 	char Backgroundify(Color color);
 public:
@@ -14,7 +14,7 @@ public:
 	Palette();
 	Palette(Color foreground);
 	Palette(Color foreground, Color background);
-	char GetCode() const;
+	unsigned char GetCode() const;
 	Color GetForeground();
 	Color GetBackground();
 	void SetForeground(Color color);

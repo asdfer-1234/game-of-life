@@ -30,12 +30,16 @@ Pixel& Renderer::SetPixel(Position position, const Pixel& pixel) {
 	return matrix.SetPixel(position, pixel);
 }
 
+Position Renderer::GetSize() {
+	return matrix.GetSize();
+}
+
 void Renderer::SetMatrixSize(Position matrixSize) {
 	matrix = Matrix(matrixSize);
 	for(int i = 0; i < 2; i++) {
 		console[i] = Console(matrixSize);
 	}
-	
+
 	Console::ActivateConsole(ActiveConsole());
 }
 

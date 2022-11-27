@@ -1,17 +1,17 @@
 #include "Palette.hpp"
 
-const char Palette::foregroundBits = 0x0F;
-const char Palette::backgroundBits = 0xF0;
+const unsigned char Palette::foregroundBits = 0x0F;
+const unsigned char Palette::backgroundBits = 0xF0;
 
 const Palette Palette::basic = Palette();
 const Palette Palette::inverted = Palette().Inverted();
 
 char Palette::Foregroundify(Color color) {
-	return (char)color;
+	return (unsigned char)color;
 }
 
 char Palette::Backgroundify(Color color) {
-	return ((char)color) << 4;
+	return ((unsigned char)color) << 4;
 }
 
 Palette::Palette() :
@@ -25,7 +25,7 @@ Palette::Palette(Color foreground, Color background) {
 	SetBackground(background);
 }
 
-char Palette::GetCode() const {
+unsigned char Palette::GetCode() const {
 	return code;
 }
 

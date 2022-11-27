@@ -5,12 +5,14 @@
 using namespace std;
 
 class Rule {
-private:
-	bool direction[directionCount];
-	bool toTrue[2][directionCount];
 public:
+	vector<Position> direction;
+	vector<bool> trueTo;
+	vector<bool> falseTo;
 	static const Rule life;
 	static const Rule highLife;
 	static const Rule longLife;
-	bool IsToTrue(bool state, int adjacent);
+	static const Rule maze;
+	Rule(const vector<Position>& direction, const vector<bool>& trueToTrue, const vector<bool>& falsekTo);
+	bool IsToTrue(bool state, int adjacent) const;
 };
